@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ *{
+     margin:0;
+     padding:0;
+     box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
+     scroll-behavior: smooth;
+ }
+
+ body{
+     min-height:100vh;
+     overflow-x: hidden;
+     /* background: linear-gradient(#2b1055, #7597de); */
+     background: #2b1051;
+ }
+
+ header{
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     padding:5px 5px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     z-index: 1000;
+     background-color: #2b1051;
+     height: 70px;
+     box-shadow: 0 20px 20px #0b0b0b;
+
+}
+
+ header .logo{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+ }
+
+ .activeLink {
+  background-color: #3498db;
+  color: #ffffff;
+  /* Add any other styling you want for the active link */
+}
+
+
+ header ul{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ header ul li{
+     list-style: none;
+     margin-left: 20px;
+ }
+
+ header ul li a{
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 20px;
+    color: #fff;
+}
+
+ header ul li a:hover{
+     background: #fff;
+     color: #2b1055;
+ }
+
+ section{
+     position:relative;
+     width:100%;
+     height:100vh;
+     /* padding: 50px; */
+     display: flex;
+     justify-content: left;
+     align-items: center;
+ }
+
+ .animation_moon::before{
+     content: '';
+     position: absolute;
+     bottom: 0;
+     width: 100%;
+     height: 100px;
+     background: linear-gradient(to top, #1c0522, transparent);
+    z-index: 1001;
+    }
+
+
+ section img{
+     position:absolute;
+     left:0;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     pointer-events: none;
+ }
+
+ section img.moon{
+    mix-blend-mode: screen;
+ }
+
+ .text{
+    position: absolute;
+    right:-350px;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 5vw;
+    z-index: 9;
+ }
+
+ section img.mountain_front{
+    z-index:10;
+ }
+
+ .btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 30px;
+    background: #fff;
+    color:#2b1055;
+    font-size: 1.5em;
+    z-index: 10;
+    transform: translateY(100px);
+}
+
+
+.sec{
+    position: relative;
+    padding: 100px;
+    background: #1c0522;
+}
+
+.sec h2{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.sec p{
+    font-size: 1.2em;
+    color: #fff;
+}
+
+
+
+
+.moon{
+    /* position: relative; */
+    /* color: #fff; */
+    /* font-size: 10em !important; */
+    text-shadow: 0 0 50px #0f0,
+        0 0 100px #0f0,
+        0 0 150px #0f0,
+        0 0 200px #0f0,
+        0 0 250px #0f0;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+
+h2 .span_for_name{
+    /* background: #4e54c8;   */
+    /* background: -webkit-linear-gradient(#eee, #333); */
+background: linear-gradient(to right, rgb(198, 231, 196), rgb(60, 255, 0));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  color: rgb(0, 166, 255);
+  font-size: 40px !important;
+}
+
+.intro_name{
+    z-index: 100; 
+    color: aliceblue !important;
+    font-size: 40px !important;
+}
+
+.intro_desc{
+    color: rgb(196, 214, 231) !important;
+    font-size: 16px !important;
+    text-align: start;
+    max-width: 90%;
+}
+
+.para{
+    color: whitesmoke !important;
+    font-size: 16px !important;
+    text-align: left;
+}
+
+section #card{
+    color: rgb(196, 214, 231) !important;
+    font-size: 12px !important;
+    text-align: center !important;
+    justify-content: center !important;
+    /* padding-left: 120px;
+    padding-right: 120px; */
+    padding-top: 30px;
+}
+
+.experience_title{
+    margin-top: 100px;
+    color: rgb(0, 166, 255) !important;
+    font-size: 40px !important;
+    text-align: center;
+}
+
+.footer{
+    background-color: transparent;
+
+}
+
+
+/* copied data css is */
+
+
+@keyframes moonAnimation {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-250px, 275px);
+    }
+  }
+  
+  /* @keyframes mountainsBehindAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(20px);
+    }
+  } */
+  
+  @keyframes starsAnimation {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(90px);
+    }
+  }
+  
+
+  @keyframes cloudAnimation1 {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(250px, -75px);
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  @keyframes cloudAnimation2 {
+    0% {
+      transform: translateX(-750px);
+    }
+    100% {
+      transform: translateX(590px);
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  
+  .cloud2 {
+    animation: cloudAnimation2 15s ease-in-out forwards;
+  }
+  
+  .cloud1 {
+    animation: cloudAnimation1 15s ease-in-out forwards;
+  }
+
+
+  .moon {
+    animation: moonAnimation 25s forwards alternate; 
+  }
+  
+  /* .mountains_behind {
+    animation: mountainsBehindAnimation 15s infinite alternate; 
+  } */
+  
+  .stars {
+    animation: starsAnimation 15s ease-in forwards; 
+  }

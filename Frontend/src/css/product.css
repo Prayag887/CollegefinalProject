@@ -1,0 +1,64 @@
+.container .box{
+    position: relative;
+    display: grid;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    width: 300px;
+    height: 400px;
+    margin:40px;
+    background: transparent;
+    border-radius: 20px;
+}
+
+.container .box::before{
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.container .box .box::after{
+    content: '';
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.container .box .circle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: 0.5s;
+    background: #fff;
+    transform-style: preserve-3d;
+    z-index: 10;
+    transform:  translate3d(-50%, -50%, 50px);
+    opacity: 1;
+}
+
+.container .box .product{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    max-width: 200px;
+    transition: 0.5s;
+    z-index: 11;
+    transition: 0.5s;
+    transform: translate3d(-50%, -50%, 0px) rotate(-15deg);
+
+}
+
+.container  .box:nth-child(1) .circle{
+    background: transparent;
+}
+
+.container  .box:nth-child(2) .circle{
+    background: #9bdc78;
+}
+
+.container  .box:nth-child(3) .circle{
+    background: #fb4b4f;
+}

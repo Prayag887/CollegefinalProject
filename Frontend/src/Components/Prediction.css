@@ -1,0 +1,78 @@
+
+.main-prediction{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2b1051;
+}
+.left-prediction{
+  height: 50%;
+  width: 50%;
+
+}
+.right-prediction{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.prediction-title{
+  color: #ffffff;
+  margin: 10px;
+  text-shadow: 1px 1px 3px rgb(98, 255, 0);
+}
+.predict{
+      height: 100vh;
+      width: 100%;
+    }
+.body-input form{
+      padding: 10rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      
+    }
+.inputs{
+      height: 2rem;
+      padding: 0.6rem;
+      margin: 3rem;
+    }
+.label-color-input{
+      color: #ffffff;
+    }
+.btn{
+      height: 4.2rem;
+      border-radius: 0.6rem;
+      background: #48C353;
+      color: #000000;
+      font-weight: bold;
+      cursor: pointer;
+      border: 0.2rem 0.1rem solid #000000;
+      box-shadow:1rem 1rem 1rem #000000;
+    }
+.btn:hover{
+      transition-duration: 0.1s;
+      box-shadow: 0.3rem 0.3rem 0.4rem #ffffff;
+      background-color: rgb(255, 0, 0);
+      color: #ffffff;
+    }
+.input-field{
+      height: 3rem;
+      border-radius: 0.6rem;
+      color: #000000;
+      font-weight: bold;
+      
+  
+    }
+    #yearSelector{
+      height: 3rem;
+      width: 20rem;
+      border-radius: 0.8rem;
+      margin-left: 0.4rem;
+    
+    }

@@ -1,0 +1,42 @@
+.main-nav{
+    height: 5rem;
+    background: #48C353;
+    color: #000000;
+    box-shadow: 0.1rem 0.6rem 0.9rem #555555;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+/*  background changeable */
+.nav-in-logo{
+    height: 4.5rem;
+}
+.logo-title{
+    display: flex;
+    align-items: center;
+}
+
+.nav-title{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.bts{
+  cursor:pointer;
+}
+
+.character-reading-container {
+  width: 100%;
+  text-align: center;
+}
+
+.character-reading-text {
+  font-size: 24px; /* Adjust the font size as needed */
+  display: inline-block;
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflowing text */
+}
+.main-nav Link{
+  text-decoration: none;
+  color: #000000;
+}

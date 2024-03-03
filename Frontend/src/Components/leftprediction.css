@@ -1,0 +1,44 @@
+.left-gif{
+    width: 50%;
+    height: 70%;
+    box-shadow: 8px 8px 40px rgb(255, 255, 255);
+}
+.gif-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.gif-title{
+    text-align: center;
+    color: #ffffff;
+}
+.gif-image img{
+    height: 350px;
+    width: 550px;
+}
+
+.outerscreen{
+    margin: 80px;
+    width: 50%;
+    height: 70%;
+    box-shadow: 8px 8px 40px rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+.innerscreen{
+    width: 84%;
+    height: 84%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    color: black;
+
+}
+.innerscreen img{
+    height: 50%;
+    width: 50%;
+}
